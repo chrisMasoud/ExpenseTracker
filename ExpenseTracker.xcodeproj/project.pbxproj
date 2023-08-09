@@ -41,9 +41,6 @@
 		D20BEFB52A7BE92E00EB9AB1 = {
 			isa = PBXGroup;
 			children = (
-				D2E1CC9F2A83CFD6001D015E /* Models */,
-				D2E1CC9E2A83CFCD001D015E /* ViewModels */,
-				D2E1CC9D2A83CFC1001D015E /* Views */,
 				D20BEFC02A7BE92F00EB9AB1 /* ExpenseTracker */,
 				D20BEFBF2A7BE92F00EB9AB1 /* Products */,
 			);
@@ -60,6 +57,9 @@
 		D20BEFC02A7BE92F00EB9AB1 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D2E1CC9E2A83CFCD001D015E /* ViewModels */,
+				D2E1CC9D2A83CFC1001D015E /* Views */,
+				D2E1CC9F2A83CFD6001D015E /* Models */,
 				D20BEFC12A7BE92F00EB9AB1 /* ExpenseTrackerApp.swift */,
 				D20BEFC32A7BE92F00EB9AB1 /* ContentView.swift */,
 				D20BEFC72A7BE93500EB9AB1 /* Assets.xcassets */,

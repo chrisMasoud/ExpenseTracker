@@ -13,6 +13,7 @@ struct AddForm: View {
     var body: some View {
         
         Text("HI")
+            .foregroundStyle(Color(.yellow))
         
     }
     
