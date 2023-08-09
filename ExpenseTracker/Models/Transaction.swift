@@ -10,14 +10,12 @@ import SwiftData
 
 @Model
 final class Transaction {
-    var timestamp: Date
     var name: String
     var amount: Double
     var type: String
     var category: String
     
-    init(timestamp: Date, name: String, amount: Double, type: String, category: String) {
-        self.timestamp = timestamp
+    init(name: String, amount: Double, type: String, category: String) {
         self.name = name
         self.amount = amount
         self.type = type

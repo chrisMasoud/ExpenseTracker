@@ -13,16 +13,15 @@ struct ContentView: View {
     @Query private var items: [Transaction]
 
     var body: some View {
-        NavigationSplitView {
+        NavigationView {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("\(item.name) at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("\(item.name)")
                     } label: {
                         VStack {
-                            Text(item.name)
+                            Text("\(item.name)")
                             Text("\(item.amount)")
-                            Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
                         }
                     }
                 }
@@ -38,14 +37,12 @@ struct ContentView: View {
                     }
                 }
             }
-        } detail: {
-            Text("Select an item")
         }
     }
 
     private func addItem() {
         withAnimation {
-            let newItem = Transaction(timestamp: Date(), name: "New Item", amount: 9.99, type: "Expense", category: "Entertainment")
+            let newItem = Transaction(name: "New Item", amount: 9.99, type: "Expense", category: "Entertainment")
             modelContext.insert(newItem)
         }
     }
