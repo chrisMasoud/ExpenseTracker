@@ -12,7 +12,8 @@ import SwiftData
 struct Transaction: Identifiable {
     var id: UUID
     var name: String
-    var amount: Double
+    var amount: Int
     var type: String
     var category: String
+    var date: String
 }

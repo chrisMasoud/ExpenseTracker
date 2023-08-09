@@ -42,9 +42,8 @@ struct HomeView: View {
         .padding()
         .background(.accent)
         
-        List(model.list) { item in
-            //ListItem(item: item)
-            Text("\(item.name)")
+        ForEach(model.list) { item in
+            ListItem(item: item)
         }
         
     }
