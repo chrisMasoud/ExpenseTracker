@@ -15,7 +15,7 @@ struct AddForm: View {
     @State private var type = 0
     @State private var category = 0
     let types = ["Income", "Expense"]
-    let categories = ["Food", "Rent", "Travel", "Pay", "Shopping", "Entertainment"]
+    let categories = ["Food", "Rent", "Travel", "Pay", "Shopping", "Entertainment", "Bills"]
     
     var body: some View {
         
@@ -23,6 +23,7 @@ struct AddForm: View {
 
             TextField("Name", text: $name)
                 .font(.title3)
+                .foregroundColor(.accent)
             
             Divider()
              .frame(height: 1)
@@ -31,6 +32,7 @@ struct AddForm: View {
             
             TextField("Amount", text: $amount)
                 .font(.title3)
+                .foregroundColor(.accent)
             
             Divider()
              .frame(height: 1)
@@ -62,7 +64,7 @@ struct AddForm: View {
                     .foregroundStyle(.accent)
                 Spacer()
                 Picker(selection: $category, label: Text("Category")) {
-                    ForEach(0 ..< 6) {
+                    ForEach(0 ..< 7) {
                         let c = categories[$0]
                         Text("\(c)")
                     }

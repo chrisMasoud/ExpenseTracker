@@ -12,6 +12,8 @@
 		D20BEFC62A7BE92F00EB9AB1 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BEFC52A7BE92F00EB9AB1 /* Transaction.swift */; };
 		D20BEFC82A7BE93500EB9AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20BEFC72A7BE93500EB9AB1 /* Assets.xcassets */; };
 		D20BEFCB2A7BE93500EB9AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20BEFCA2A7BE93500EB9AB1 /* Preview Assets.xcassets */; };
+		D226F23E2A84195E00D06120 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226F23D2A84195E00D06120 /* HomeView.swift */; };
+		D226F2402A841DC500D06120 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226F23F2A841DC500D06120 /* ViewModel.swift */; };
 		D2E1CCA12A83D010001D015E /* AddForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E1CCA02A83D010001D015E /* AddForm.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		D20BEFCA2A7BE93500EB9AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D20BEFCC2A7BE93500EB9AB1 /* ExpenseTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpenseTracker.entitlements; sourceTree = "<group>"; };
 		D20BEFCD2A7BE93500EB9AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D226F23D2A84195E00D06120 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D226F23F2A841DC500D06120 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D2E1CCA02A83D010001D015E /* AddForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D2E1CCA02A83D010001D015E /* AddForm.swift */,
+				D226F23D2A84195E00D06120 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 		D2E1CC9E2A83CFCD001D015E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D226F23F2A841DC500D06120 /* ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,6 +180,8 @@
 				D20BEFC42A7BE92F00EB9AB1 /* ContentView.swift in Sources */,
 				D2E1CCA12A83D010001D015E /* AddForm.swift in Sources */,
 				D20BEFC62A7BE92F00EB9AB1 /* Transaction.swift in Sources */,
+				D226F23E2A84195E00D06120 /* HomeView.swift in Sources */,
+				D226F2402A841DC500D06120 /* ViewModel.swift in Sources */,
 				D20BEFC22A7BE92F00EB9AB1 /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,17 +8,11 @@
 import Foundation
 import SwiftData
 
-@Model
-final class Transaction {
+
+struct Transaction: Identifiable {
+    var id: UUID
     var name: String
     var amount: Double
     var type: String
     var category: String
-    
-    init(name: String, amount: Double, type: String, category: String) {
-        self.name = name
-        self.amount = amount
-        self.type = type
-        self.category = category
-    }
 }
