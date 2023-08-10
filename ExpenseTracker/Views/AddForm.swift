@@ -85,6 +85,7 @@ struct AddForm: View {
                     .background(.main)
                     .font(.title2)
                     .foregroundColor(.white)
+                    .cornerRadius(5)
             })
             
         }

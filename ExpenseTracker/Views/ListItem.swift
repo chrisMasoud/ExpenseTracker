@@ -16,13 +16,13 @@ struct ListItem: View {
     var body: some View {
         HStack {
             ZStack {
-                Color(.main)
+                Color(.lightMain)
                     .cornerRadius(50)
                     .frame(width: 50, height: 50)
                 Image(systemName: sf)
                     .resizable()
                     .frame(width: 20, height: 20)
-                    .foregroundColor(.accent)
+                    .foregroundColor(.main)
             }
             VStack(alignment: .leading) {
                 Text(item.name)
@@ -36,7 +36,6 @@ struct ListItem: View {
                 .foregroundStyle(.red)
         }
         .padding()
-        .background(.offWhite)
         .onAppear {
             switch item.category {
             case "Travel":
