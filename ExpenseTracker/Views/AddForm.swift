@@ -20,6 +20,11 @@ struct AddForm: View {
     var body: some View {
         
         VStack(spacing: 20) {
+            
+            Text("Add New Transaction")
+                .font(.title)
+                .padding(.bottom, 80)
+                .foregroundColor(.accent)
 
             TextField("Name", text: $name)
                 .font(.title3)

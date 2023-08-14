@@ -12,9 +12,17 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
             AddForm()
                 .tabItem {
                     Label("Add Transaction", systemImage: "plus.rectangle.fill")
+                }
+            ChartsView()
+                .tabItem {
+                    Label("Charts", systemImage: "chart.pie.fill")
                 }
         }
     }

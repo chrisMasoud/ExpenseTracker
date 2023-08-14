@@ -32,29 +32,63 @@ struct HomeView: View {
             
 
             HStack {
-                Image(systemName: "arrow.down.left")
+                
+                ZStack {
+                    Color(.white)
+                        .cornerRadius(50)
+                        .frame(width: 25, height: 25)
+                    Image(systemName: "arrow.down.left")
+                        .resizable()
+                        .frame(width: 12, height: 12)
+                        .foregroundColor(.green)
+                }
+                
                 Text("Income")
                     .foregroundStyle(.white)
+                    .font(.headline)
+                
                 Spacer()
-                Image(systemName: "arrow.up.right")
+                
+                ZStack {
+                    Color(.white)
+                        .cornerRadius(50)
+                        .frame(width: 25, height: 25)
+                    Image(systemName: "arrow.up.right")
+                        .resizable()
+                        .frame(width: 12, height: 12)
+                        .foregroundColor(.red)
+                }
+                
                 Text("Expense")
                     .foregroundStyle(.white)
+                    .font(.headline)
+                
             }
+            
             HStack {
                 Text("$42,500")
                     .foregroundStyle(.white)
+                    .font(.headline)
                 Spacer()
                 Text("$12,421")
                     .foregroundStyle(.white)
+                    .font(.headline)
             }
+            .padding(.horizontal)
+            .padding(.bottom, 10)
+            
+            List(model.list) { item in
+                ListItem(item: item)
+            }
+            .listRowSpacing(15)
+            .padding(.horizontal, -20)
+            .padding(.bottom, -100)
+            
         }
         .padding()
         .background(.accent)
 
-        List(model.list) { item in
-            ListItem(item: item)
-        }
-        .listRowSpacing(20)
+        
     }
 }
 
